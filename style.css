@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+}
+
+.download-btn {
+  padding: 0.4rem 1rem;
+  background-color: #222;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.intro .text {
+  flex: 1;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  color: #555;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.intro img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem 0;
+  align-items: center;
+}
+
+.about-photo {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.about-text p {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Skills & Projects Section ---------- */
+.skills-section {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.skill-item {
+  width: 120px;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #444;
+}
+
+.skill-item:hover {
+  background-color: #f0f0f0;
+}
+
+.projects-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.projects-list h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.project-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #fdfdfd;
+  border-left: 4px solid #222;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #eee;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .intro, .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro img {
+    margin-top: 1rem;
+  }
+}
